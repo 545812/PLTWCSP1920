@@ -17,10 +17,17 @@ def move(my_history, their_history, my_score, their_score):
     would be conditionals inside this broad one as well tho... idk. So to have a 
     'less' agressive strats would be like... 
     '''
+    while my_score==0:
+        return 'c'      
     if my_score>-2000:
-        if my_history[-1]== 'c' and their history[-1]=='c':
-            
+        if my_history[-1]== 'c' and their_history[-1]=='c':
+            return 'c'
+        elif my_history[-1]=='c' and their_history[-1]=='b':
+            return 'b'
+        else:
+            return 'b'
     elif my_score<=-2000:
+        return'b'
         
     else: 
-        
+        return 'b'
