@@ -8,7 +8,7 @@
 
 team_name = 'team6' # Only 10 chars displayed
 strategy_name = 'whatStrategy'
-strategy_description = 'IDEK what we did, man...'
+strategy_description = 'if our score drops below a certain range, it plays more aggressively.'
     
 def move(my_history, their_history, my_score, their_score):
     '''So we gonna have a big overall conditional?? maybe. if (our points? (poss??)
